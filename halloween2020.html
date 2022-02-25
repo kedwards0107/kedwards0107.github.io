@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Halloween 2020</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets2/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Bodacious Builds</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html">Projects</a></li>
+								<!-- <li><a href="webapp.html">Web Application</a></li> -->
+								<!-- <li><a href="#">Feugiat</a></li>
+								<li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li> -->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Halloween Project 2020</a></h2>
+										<p>Let's make it better. Version 2.0</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2019-10-31">October 31, 2019</time>
+										<a href="#" class="author"><span class="name">Kevin Edwards</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="https://github.com/kedwards0107/Halloween-2019/raw/master/file/giphy.gif" alt="" /></span>
+								<h2>Functionality</h2>
+								<p>This was the first halloween project I did with my kids and the goal was to see what was the most popular trick-or-treat candy of the 4 they selected; KitKats, Sour Patch Kids, Twix or Nerds. We placed this cabinet, for lack of a better term, on a folding table in our driveway and placed a bowl of each of the corresponding candies below each arrow. The trick-or-treaters would push the button for their favorite, lights would flash for that candy, the graph would update with their selection on the ipad and they would take the candy from the bowl.</p> <h2>The Build</h2>
+								<span class="image featured"><img src="images/2019 _display_back.jpg" alt="" /></span>
+									<p>
+									Definitely a bit messy under the hood, but we used a raspberry pi 3 and a breadboard to connect a 4 terminal relay switch, 4 led light strings for the "arrows", and 5 arcade buttons. Python was used as the programming language. When you pressed the button it activated the switch attached to that particular candy's led lights which would flash on and off 6 times, and also updated a google sheets chart which was shown on an ipad in the cabinet. The red arcade button in the center activated a jumping spider that lept over the cabinet from behind. You probably have seen this spider decoration at a halloween store and we modified the activator to connect to this button rather than the intended pressure sensitive mat that you step on. We also printed a QR code so that, if people were interested in which candy won at the end of the night, they could take a picture of it and it would send them to the google sheet.</p>
+									<p><a href="https://github.com/kedwards0107/Halloween-2019/blob/master/code">Link to Python code on Github</a></p>
+
+									<h2>The Data</h2>
+								<span class="image featured"><img src="images/Data_2019.jpg" alt="" /></span>
+								
+								<p>As you can see in the google sheet screenshot above, we tracked the popularity of each of the candies. Afterwards, I analyzed the time which each button was pressed and correlated this to the number of trick-or-treaters within 5 minute intervals, and looked for trends. This data can be seen in the Google sheet in the "Analysis" tab. It was great to see the interest the trick-or-treaters had in the data and after 124 trick-or-treaters there was a clear preference for sour patch kids.
+									<p><a href="https://docs.google.com/spreadsheets/d/1bcxbo76gJ1BeLx_HlNSxhXILO6CTZH6Sn2SP82E87RY/edit?usp=sharing">Link to the Google Sheet</a></p>
+									<h2>Sources</h2>
+									<p>Credit and thanks for how to link Python to Google Sheets goes to "Tech with Tim - Python Google Sheets API Tutorial - 2019" -  <a href="https://www.youtube.com/watch?v=cnPlKLEGR7E&list=LLQ9okj1k2C-JgQ5nJuMXRaA&index=17&t=372s">Link to YouTube video</a></p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets2/js/jquery.min.js"></script>
+			<script src="assets2/js/browser.min.js"></script>
+			<script src="assets2/js/breakpoints.min.js"></script>
+			<script src="assets2/js/util.js"></script>
+			<script src="assets2/js/main.js"></script>
+
+	</body>
+</html>
