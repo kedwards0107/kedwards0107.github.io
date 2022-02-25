@@ -2326,11 +2326,11 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			margin: 0 0 3em 0;
-			width: 60%;
+			width: 100%;
 		}
 
 			.image.featured img {
-				width: 60%;
+				width: 100%;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -2997,7 +2997,7 @@ input, select, textarea {
 			.post > .image.featured {
 				margin-left: -1.5em;
 				margin-top: calc(-1.5em - 1px);
-				width: calc(60% + 3em);
+				width: calc(100% + 3em);
 			}
 
 			.post > footer {
