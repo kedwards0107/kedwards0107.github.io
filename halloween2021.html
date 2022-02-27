@@ -100,7 +100,7 @@
 								<header>
 									<div class="title">
 										<h2><a href="#">Halloween Project 2021</a></h2>
-										<p></p>
+										<p>Let's Make it Better. Version 3.0</p>
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2021-10-31">October 31, 2021</time>
@@ -109,12 +109,12 @@
 								</header>
 								<span class="image featured"><img src="images/2021_finished3.JPG"  alt="" /></span>
 								<h2>Functionality</h2>
-								<p>The 2021 build needed to overcome several dispensing challenges we had in 2020. The easiest one to fix was to replace the motion sensors with buttons. This would eliminate the issue with triggering the dispensing. The other main issue was that the rack and pinion system had to be too precise. I decided to instead use a converyor belt design. This used lego tank belts and wheels in a housing I designed and 3D printed.</p> <h2>The Build</h2>
+								<p>The 2021 build needed to overcome several dispensing challenges we had in 2020. The easiest one to fix was to replace the motion sensors with buttons. This would eliminate the issue with triggering the dispensing. The other main issue was that the rack and pinion system had to be too precise. I decided to instead use a converyor belt design. </p> <h2>The Build</h2>
 								<span class="image featured"><img src="images/2021_conveyor2.JPG" alt="" /></span>
 									<p>
-									Very similar in terms of components to the 2019 build, we used a raspberry pi 3 and a breadboard to connect a 4 terminal relay switch, 4 led light strings for the "arrows", 2 stepper motors and 4 motion sensors. In addition, I  designed and 3D printed mounts for the motors as well as the rack and pinions. Python was used as the programming language. When you placed your bag/hand under the ramp for a given candy it activated the motor in the direction needed to dispense the candy, additionally it activated a switch attached to that particular candy's led lights which would flash on and off 6 times, and also updated a google sheets chart which was shown on an ipad in the cabinet. We also printed a QR code so that, if people were interested in which candy won at the end of the night, they could take a picture of it and it would send them to the google sheet.</p>
-									<p>As the build was only for one night we continued to use the quick connects and breadboard in the design. It is great to be able to re-use the components for other projects or for next year's Halloween project. Unfortunately, the cabinet design had to change, but as you can see many of the wood parts are made from scraps of other projects. The big cost was definitely the plexiglass which was much more expensive in 2020 due to covid.</p>
-									<p>We learned quickly Halloween night that there were several issues with this design. For one, the movement of the rack and pinion had to be precise to dispense the candy and return to the original starting position. Unfortunately, there were several times it got stuck or misaligned which required manually resetting it. Additionally, as day faded into night the light sensors did not activate properly or activated completely on their own. It was definitely a learning experience! </p>
+									Very similar in terms of components to the 2019 & 2020 build, we used a raspberry pi 3 and a breadboard to connect 4 stepper motors and 4 buttons. In addition, it used conveyor system to dispense the candy which used lego tank tracks and wheels in a housing I designed and 3D printed. Python was used as the programming language. When you pressed the button for a given candy it activated the motor to turn the conveyor belt in the direction needed to dispense the candy, and reversed the belt after dispensing to ensure the next candy was properly aligned and also updated a google sheets chart which was shown on an ipad in the cabinet. We also printed a QR code so that, if people were interested in which candy won at the end of the night, they could take a picture of it and it would send them to the google sheet.</p>
+									<p>We continued to use the quick connects and breadboard in the design. It is great to be able to re-use the components for other projects or for next year's Halloween project. Unfortunately, the cabinet design had to change, but as you can see many of the wood parts are made from scraps of other projects. Other design changes were the use of 4 motors which was more complicated to code but allowed for individual fine tuning of each delivery belt and allowed for a more compact design. The channels in the back were cut where you could refill the candy easily.</p>
+									<p>This conveyor belt design was far superior to the rack and pinion 2020 system. It performed almost flawlessly all night! </p>
 									<p><a href="https://github.com/kedwards0107/halloween_2020">Link to Python code on Github</a></p>
 
 									<h2>The Data</h2>
