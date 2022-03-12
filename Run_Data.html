@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Property Tax 2020</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets2/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Data Analysis</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html">Projects</a></li>
+								<!-- <li><a href="webapp.html">Web Application</a></li> -->
+								<!-- <li><a href="#">Feugiat</a></li>
+								<li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li> -->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Property Tax 2020</a></h2>
+										<p>Webscraping with Python and Analysis with R</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2021-10-31">April 1, 2020</time>
+										<a href="#" class="author"><span class="name">Kevin Edwards</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/Property_tax.png"  alt="" /></span>
+								<h2>Overview</h2>
+								<p>I wanted to appeal my property taxes because I thought they were high, but I didn't know where I stood compared to my neighbors. Wouldn't it would be great if I could see the property taxes for all homes in my neighborhood? Webscraping to the rescue! </p>
+								<p>In terms of ease of analysis, this was one of the rare occasion where it is good to live in a "cookie cutter" neighborhood as there are only 4 house styles on similar acreages. Looking at the graph above, there are clear factors impacting the property tax. As the acreage goes up, so does the property tax and the larger houses (Style 3 and Style 4) also have higher taxes which all make logical sense. However, it appears that there are 2 distinct lines, one for those who have appealed their taxes and those who have not. Also of note, I have redacted the actual dollar amount and other details to not disclose sensitive information, however the graphs still demonstrate the conclusions drawn during this analysis.</p> <h2>Webscraping with Python</h2>
+								<span class="image featured"><img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwc2NyYXBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" /></span>
+									<p>To perform the webscraping in Python, I used the Selenium and BeautifulSoup modules. To format the data, I used Pandas and then extracted it to a csv file. The first stage of the code established the column names and populated the first address into the dataframe. The second stage then iterated through the numerical street address and added each to the dataframe. Another fortunate coincidence is that 90% of the houses in my neighborhood are on one long street and the other 10% on just one other, therefore it was simple enough to just run the program twice, once for each street name and sequence of numerical street addresses.</p>
+									<p><a href="https://github.com/kedwards0107/property_tax">Link to Python code on Github</a></p>
+
+									<h2>Data Analysis with R</h2>
+								<span class="image featured"><img src="images/Box_Plot_Taxes.png" alt="" /></span>
+								
+								<p>Once I had the raw data in a csv file I needed to decide how I would analyze the data. I use R in my work and find it is the fastest way to generate presentation worthy graphs. For this analysis in R, I used tidyverse and ggplot to generate the graphs presented here and in the introduction. </p>
+								<p><a href="https://github.com/kedwards0107/property_tax">Link to R code on Github</a></p>
+									<h2>Conclusions</h2>
+									<p>The assumptions used in this analysis is that the square footage of a house, and the acreage that house sits on are the two main factors considered in setting the property tax. Diving into the first graph, out of the 157 houses included in this analysis, it was concluded that the lower line on the first graph (28 houses) represents those who have appealed to reduce their property taxes because the same house model (same or similar square footage) on similar acreage have vastly different property taxes compared to the top line (129 houses). Therefore there is significant reduction potential for those who have yet to appeal. From the second graph, the box plot shows that the outliers are almost exclusively on the lower end. This made the probabilty of successfully reducing my taxes high and the amount significant.
+										</p> <p> For the appeal, I had to provide three other comparable houses to justify my appeal. Using this data, I selected 3 house of the same model that paid the lowest amount. This was very successful as my taxes were reduced significantly.</p>
+								<!-- <footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer> -->
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://github.com/kedwards0107"><span class="icon brands fa-github" class="label">Github</span></a></li>
+
+							<li><a href="https://www.linkedin.com/in/kevin-edwards-a8335911/"><span class="icon brands fa-linkedin" class="icon brands fa-linkedin" class="label">LinkedIn</span></a></li>
+							
+							<li><a href="mailto: kedwards0107@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. a</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets2/js/jquery.min.js"></script>
+			<script src="assets2/js/browser.min.js"></script>
+			<script src="assets2/js/breakpoints.min.js"></script>
+			<script src="assets2/js/util.js"></script>
+			<script src="assets2/js/main.js"></script>
+
+	</body>
+</html>
