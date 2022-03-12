@@ -99,19 +99,19 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Property Tax 2020</a></h2>
-										<p>Webscraping with Python and Analysis with R</p>
+										<h2><a href="#">Run the Numbers</a></h2>
+										<p>Analysis of 13+ years of running data</p>
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2021-10-31">April 1, 2020</time>
 										<a href="#" class="author"><span class="name">Kevin Edwards</span><img src="images/avatar.jpg" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/Property_tax.png"  alt="" /></span>
+								<span class="image featured"><img src="Runs_Year_Pace.png"  alt="" /></span>
 								<h2>Overview</h2>
 								<p>I wanted to appeal my property taxes because I thought they were high, but I didn't know where I stood compared to my neighbors. Wouldn't it would be great if I could see the property taxes for all homes in my neighborhood? Webscraping to the rescue! </p>
 								<p>In terms of ease of analysis, this was one of the rare occasion where it is good to live in a "cookie cutter" neighborhood as there are only 4 house styles on similar acreages. Looking at the graph above, there are clear factors impacting the property tax. As the acreage goes up, so does the property tax and the larger houses (Style 3 and Style 4) also have higher taxes which all make logical sense. However, it appears that there are 2 distinct lines, one for those who have appealed their taxes and those who have not. Also of note, I have redacted the actual dollar amount and other details to not disclose sensitive information, however the graphs still demonstrate the conclusions drawn during this analysis.</p> <h2>Webscraping with Python</h2>
-								<span class="image featured"><img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwc2NyYXBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" /></span>
+								<span class="image featured"><img src="month_distance_year.png" alt="" /></span>
 									<p>To perform the webscraping in Python, I used the Selenium and BeautifulSoup modules. To format the data, I used Pandas and then extracted it to a csv file. The first stage of the code established the column names and populated the first address into the dataframe. The second stage then iterated through the numerical street address and added each to the dataframe. Another fortunate coincidence is that 90% of the houses in my neighborhood are on one long street and the other 10% on just one other, therefore it was simple enough to just run the program twice, once for each street name and sequence of numerical street addresses.</p>
 									<p><a href="https://github.com/kedwards0107/property_tax">Link to Python code on Github</a></p>
 
