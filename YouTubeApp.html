@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Halloween 2020</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets2/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Bodacious Builds</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html">Projects</a></li>
+								<!-- <li><a href="webapp.html">Web Application</a></li> -->
+								<!-- <li><a href="#">Feugiat</a></li>
+								<li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li> -->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Halloween Project 2021</a></h2>
+										<p>Let's Make it Better. Version 3.0</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2021-10-31">October 31, 2021</time>
+										<a href="https://www.linkedin.com/in/kevin-edwards-a8335911/" class="author"><span class="name">Kevin Edwards</span><img src="images/avatar.png" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/2021_finished3.JPG"  alt="" /></span>
+								<h2>Functionality</h2>
+								<p> The new design functioned by the trick-or-treater pressing the button for the candy they wanted and the conveyor belt activated to dispense the candy to the ramp which would then fall in to the trick-or-treater's hand or bag. The button also updated the graph shown on the ipad. The LED lights did a chase pattern that was not tied to the buttons at all. It just cycled through the color spectrum in a loop. Also, as you may have already noticed, I ran out of white filament and replaced it with black for the nerds conveyor belt holder.</p> <h2>The Build</h2>
+								<span class="image featured"><img src="images/2021_conveyor2.JPG" alt="" /></span>
+									<p>
+										The 2021 build needed to overcome several dispensing challenges we had in 2020. The easiest one to fix was to replace the motion sensors with buttons. This would eliminate the issue with triggering the dispensing. The other main issue was that the rack and pinion system had to be too precise. I decided to instead use a conveyor belt design. The conveyor belt used a lego tank track and wheels in a housing I designed and 3D printed.  Otherwise, it was very similar in terms of components to the 2019 & 2020 build, we used a raspberry pi 3 and a breadboard to connect a led light strip, 4 stepper motors and 4 buttons. The led strip ran a continuous light changing running pattern that was not tied to the buttons. For 2022 I am considering having it change based on which candy is selected. Python was used as the programming language. When you pressed the button for a given candy it activated the motor to turn the conveyor belt in the direction needed to dispense the candy, and reversed the belt after dispensing to ensure the next candy was properly aligned and also updated a google sheets chart which was shown on an ipad in the cabinet. We also printed a QR code so that, if people were interested in which candy won at the end of the night, they could take a picture of it and it would send them to the google sheet.</p>
+									<p>We continued to use the quick connects and breadboard in the design. It is great to be able to re-use the components for other projects or for next year's Halloween project. Unfortunately, the cabinet design had to change, but as you can see many of the wood parts are made from scraps of other projects. Other design changes were the use of 4 motors which was more complicated to code but allowed for individual fine tuning of each delivery belt and allowed for a more compact design. The cut out channels in the back of the display were cut where you could refill the candy easily, but wouldn't let the candy fall out the back.</p>
+									<p>This conveyor belt design was far superior to the rack and pinion 2020 system. It performed almost flawlessly all night! </p>
+									<h2>The Code</h2>
+										<p>Very little of the code from previous years could be re-used for this build. The motor sequences were the same as the 2020 Halloween project and the link to Google sheets was also the same. The LED strip was a last minute update to up the "wow" factor. We were coming off of the Grim Reaper design of 2020, so we couldn't let it go with a dull design. It was too late in the game to try to tie the LEDs into the pressing of the buttons, but it is a goal for 2022.  </p>
+									<p><a href="https://github.com/kedwards0107/Halloween_2021">Link to Python code on Github</a></p>
+
+									<h2>The Data</h2>
+								<span class="image featured"><img src="images/Data_2021.png" alt="" /></span>
+								
+								<p>As you can see in the google sheet screenshot above, it was a close race with KitKats bearly winning. This was a very busy year with 170 trick-or-treaters. 
+									<p><a href="https://docs.google.com/spreadsheets/d/1M19RsCjI-zFv2LCHNa5BLOOcssgqaJ_JMMQyHRoKZlw/edit?usp=sharing">Link to the Google Sheet</a></p>
+									<h2>Sources</h2>
+									<p>Credit and thanks for how to link Python to Google Sheets goes to "Tech with Tim - Python Google Sheets API Tutorial - 2019" -  <a href="https://www.youtube.com/watch?v=cnPlKLEGR7E&list=LLQ9okj1k2C-JgQ5nJuMXRaA&index=17&t=372s">Link to YouTube video</a></p>
+								<!-- <footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer> -->
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://github.com/kedwards0107"><span class="icon brands fa-github" class="label">Github</span></a></li>
+
+							<li><a href="https://www.linkedin.com/in/kevin-edwards-a8335911/"><span class="icon brands fa-linkedin" class="icon brands fa-linkedin" class="label">LinkedIn</span></a></li>
+							
+							<li><a href="mailto: kedwards0107@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. a</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets2/js/jquery.min.js"></script>
+			<script src="assets2/js/browser.min.js"></script>
+			<script src="assets2/js/breakpoints.min.js"></script>
+			<script src="assets2/js/util.js"></script>
+			<script src="assets2/js/main.js"></script>
+
+	</body>
+</html>
