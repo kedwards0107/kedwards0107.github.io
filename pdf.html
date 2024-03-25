@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>YouTube Downloader Application</title>
+		<title>PDF Data Extraction</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets2/css/main.css" />
@@ -113,8 +113,15 @@
 								<span class="image featured"><img src="images/2021_conveyor2.JPG" alt="" /></span> -->
                                 <span class="image featured"><img src="images/pdf_to_excel.png"  alt="" /></span>
 									<h2>The Code</h2>
-										<p>I developed this code to extract data from Costco receipts as the website only allows you to see individual receipts online. I wanted an automatic way to combine all my purchases into one spreadsheet to allow me to see how much I am spending on types of items and develop an efficient shopping list where I only have to visit Costco once per quarter. </p>
-									<p><a href="https://github.com/kedwards0107/">Link to Python code on Github</a></p>
+										<p>I developed this code to extract data from Costco receipts as the website only allows you to see individual receipts online. I wanted an automatic way to combine all my purchases into one spreadsheet to allow me to see how much I am spending on types of items and develop an efficient shopping list where I only have to visit Costco once per quarter.</p>
+								<p>App.py</p>
+<p>This code extracts data from Costco PDF receipts by using regular expressions. The regex is not perfect as some of the information is extracted incorrectly however I estimate that the accuracy is >95%. The PDFs are pulled one by one from a folder named costcoPDF, the data is extracted and combined into a single csv file that is then saved as costco_data_output.csv
+</p>
+								<p>
+google drive extract.py</p>
+<p>
+This code is the same as the App.py code except that the PDFs are pulled one by one from a linked google drive account and combined into one csv file the data is then combined with dimensional data from a csv file named Dim_costco.csv that I made to add additional details about the items. This combined data is then added to the google drive. </p>
+									<p><a href="https://github.com/kedwards0107/costco_receipt">Link to Python code on Github</a></p>
 								<p> References </p>
 									
 
