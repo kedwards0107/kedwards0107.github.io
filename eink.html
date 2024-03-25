@@ -113,15 +113,11 @@
 								<span class="image featured"><img src="images/2021_conveyor2.JPG" alt="" /></span> -->
                                 <span class="image featured"><img src="images/eink.png"  alt="" /></span>
 									<h2>The Code</h2>
-										<p>I developed this code to extract data from Costco receipts as the website only allows you to see individual receipts online. I wanted an automatic way to combine all my purchases into one spreadsheet to allow me to see how much I am spending on types of items and develop an efficient shopping list where I only have to visit Costco once per quarter.</p>
-								<p>App.py</p>
-<p>This code extracts data from Costco PDF receipts by using regular expressions. The regex is not perfect as some of the information is extracted incorrectly however I estimate that the accuracy is >95%. The PDFs are pulled one by one from a folder named costcoPDF, the data is extracted and combined into a single csv file that is then saved as costco_data_output.csv
-</p>
-								<p>
-google drive extract.py</p>
-<p>
-This code is the same as the App.py code except that the PDFs are pulled one by one from a linked google drive account and combined into one csv file the data is then combined with dimensional data from a csv file named Dim_costco.csv that I made to add additional details about the items. This combined data is then added to the google drive. </p>
-									<p><a href="https://github.com/kedwards0107/costco_receipt">Link to Python code on Github</a></p>
+										<p>This project was based on a another project I saw that used an Amazon Dash button that someone modified to record a date and time stamp everytime someone pushed the button. I wanted to do something similar but used an eink display to show the last time it was pressed and update the "Days Since Last Pressed" counter every 24 hrs. Once the button was pressed
+										The date on the display would update to the current date and time and the day counter would reset. .I chose an eink display due to the low power usage. Originally I wanted to make this a battery powered device but the raspberry pi nano that I used still used to much power for it to run off of batteries for more than a day or two. Additionally, I programmed the wifi to turn on only once the button was
+										pressed and once the data was sent to the spreadsheet then the wifi would turn back off again in an attempt to reduce the power consumption.</p>
+								
+									<p><a href="https://github.com/kedwards0107/eink">Link to Python code on Github</a></p>
 								<p> References </p>
 									
 
